@@ -1,0 +1,568 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>uniapp | TomorrowLM-Web</title><meta name="keywords" content="uniapp"><meta name="author" content="LMTomorrow,120329698@qq.com"><meta name="copyright" content="LMTomorrow"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="uniapp学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="uniapp">
+<meta property="og:url" content="https://tomorrowlm.github.io/2020/09/25/uniapp/index.html">
+<meta property="og:site_name" content="TomorrowLM-Web">
+<meta property="og:description" content="uniapp学习">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg">
+<meta property="article:published_time" content="2020-09-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-11-14T09:57:36.637Z">
+<meta property="article:author" content="LMTomorrow">
+<meta property="article:tag" content="uniapp">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://tomorrowlm.github.io/2020/09/25/uniapp/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'uniapp',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-11-14 17:57:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><style type="text/css">#toggle-sidebar {left:100px}</style><link rel="stylesheet" href="/css/custom.css"></link><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiperstyle.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/touxiang.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">TomorrowLM-Web</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 目录</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">uniapp</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-09-24T16:00:00.000Z" title="发表于 2020-09-25 00:00:00">2020-09-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-14T09:57:36.637Z" title="更新于 2021-11-14 17:57:36">2021-11-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/uniapp/">uniapp</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">8.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>29分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="uniapp"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="eBook"><a href="#eBook" class="headerlink" title="eBook"></a>eBook</h1><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g <span class="keyword">@vue</span>/cli</span><br></pre></td></tr></table></figure>
+
+<h1 id="创建一个项目"><a href="#创建一个项目" class="headerlink" title="创建一个项目"></a>创建一个项目</h1><h2 id="1-命令"><a href="#1-命令" class="headerlink" title="1.命令"></a>1.命令</h2><ul>
+<li><p>运行以下命令来创建一个新项目：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create hello-world</span><br></pre></td></tr></table></figure>
+
+<p>可以选默认的包含了基本的 Babel + ESLint 设置的 preset，也可以选“手动选择特性”来选取需要的特性。</p>
+<p><img src="https://cli.vuejs.org/cli-new-project.png" alt="CLI 预览"></p>
+<p>手动设置则提供了更多的选项，它们是面向生产的项目更加需要的。</p>
+<p><img src="https://cli.vuejs.org/cli-select-features.png" alt="CLI 预览"></p>
+</li>
+<li><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//使用uniapp模板创建项目</span><br><span class="line">vue create -p dcloudio/uni-preset-vue my-project</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别"><a href="#使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别" class="headerlink" title="使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别"></a>使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别</h3><ul>
+<li>编译器的区别<ul>
+<li>cli创建的项目，编译器安装在项目下。并且不会跟随HBuilderX升级。如需升级编译器，执行n<strong>pm update</strong>。</li>
+<li>HBuilderX可视化界面创建的项目，编译器在HBuilderX的安装目录下的plugin目录，随着HBuilderX的升级会自动升级编译器。</li>
+<li>已经使用cli创建的项目，如果想继续在HBuilderX里使用，可以把工程拖到HBuilderX中。注意如果是把整个项目拖入HBuilderX，则编译时走的是项目下的编译器。如果是把src目录拖入到HBuilderX中，则走的是HBuilderX安装目录下plugin目录下的编译器。</li>
+<li>cli版如果想安装less、scss、ts等编译器，需自己手动npm安装。在HBuilderX的插件管理界面安装无效，那个只作用于HBuilderX创建的项目。</li>
+</ul>
+</li>
+<li>开发工具的区别<ul>
+<li>cli创建的项目，内置了d.ts，同其他常规npm库一样，可在vscode、webstorm等支持d.ts的开发工具里正常开发并有语法提示。</li>
+<li>使用HBuilderX创建的项目不带d.ts，HBuilderX内置了uni-app语法提示库。如需把HBuilderX创建的项目在其他编辑器打开并且补充d.ts，可以在项目下先执行 npm init，然后npm i @types/uni-app -D，来补充d.ts。</li>
+<li>但vscode等其他开发工具，在vue或uni-app领域，开发效率比不过HBuilderX。详见：<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/35451">https://ask.dcloud.net.cn/article/35451</a></li>
+<li>发布App时，仍然需要使用HBuilderX。其他开发工具无法发布App，但可以发布H5、各种小程序。如需开发App，可以先在HBuilderX里运行起来，然后在其他编辑器里修改保存代码，代码修改后会自动同步到手机基座。</li>
+<li>如果使用cli创建项目，那下载HBuilderX时只需下载10M的标准版即可。因为编译器已经安装到项目下了。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-使用图形化界面"><a href="#2-使用图形化界面" class="headerlink" title="2.使用图形化界面"></a>2.使用图形化界面</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue ui</span><br></pre></td></tr></table></figure>
+
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><p>越来越多的网站已经从网页模式进化到了 Webapp 模式。它们运行在现代的高级浏览器里，使用 HTML5、 CSS3、 ES6 等更新的技术来开发丰富的功能，网页已经不仅仅是完成浏览的基本需求，并且webapp通常是一个单页面应用，每一个视图通过异步的方式加载，这导致页面初始化和使用过程中会加载越来越多的 JavaScript 代码，这给前端开发的流程和资源组织带来了巨大的挑战。</p>
+<p>如何在开发环境组织好这些碎片化的代码和资源，并且保证他们在浏览器端快速、优雅的加载和更新，就需要一个模块化系统</p>
+<h3 id="1-模块的演进"><a href="#1-模块的演进" class="headerlink" title="1.模块的演进"></a>1.模块的演进</h3><p><strong>用于在模块化中定义规范</strong></p>
+<h4 id="script标签"><a href="#script标签" class="headerlink" title="script标签"></a><strong>script标签</strong></h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">&quot;module1.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;module2.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>这是最原始的 JavaScript 文件加载方式，如果把每一个文件看做是一个模块，那么他们的接口通常是暴露在全局作用域下，也就是定义在 <code>window</code> 对象中</p>
+<h4 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a><strong>CommonJS</strong></h4><p>是一种为JS的表现指定的规范，它希望js可以运行在任何地方，更多的说的是服务端模块规范，Node.js采用了这个规范。</p>
+<p>核心思想<br>允许模块通过 <code>require</code> 方法来同步加载所要依赖的其他模块，然后通过 <code>exports</code> 或 <code>module.exports</code> 来导出需要暴露的接口。</p>
+<p><strong>优点：</strong>服务器端模块重用，NPM中模块包多，有将近20万个。</p>
+<p><strong>缺点：</strong>加载模块是同步的，只有加载完成后才能执行后面的操作，也就是当要用到该模块了，现加载现用，不仅加载速度慢，而且还会导致性能、可用性、调试和跨域访问等问题。Node.js主要用于服务器编程，加载的模块文件一般都存在本地硬盘，加载起来比较快，不用考虑异步加载的方式，因此,CommonJS规范比较适用。然而，这并不适合在浏览器环境，同步意味着阻塞加载，浏览器资源是异步加载的，因此有了AMD CMD解决方案。</p>
+<p><strong>实现</strong>：</p>
+<ul>
+<li>服务器端的 <a target="_blank" rel="noopener" href="http://www.nodejs.org/">Node.js</a></li>
+<li><a target="_blank" rel="noopener" href="http://browserify.org/">Browserify</a>，浏览器端的 CommonJS 实现，可以使用 NPM 的模块，但是编译打包后的文件体积可能很大</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/medikoo/modules-webmake">modules-webmake</a>，类似Browserify，还不如 Browserify 灵活</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/substack/wreq">wreq</a>，Browserify 的前身</li>
+</ul>
+<h4 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a><strong>AMD</strong></h4><p>鉴于浏览器的特殊情况，又出现了一个规范，这个规范呢可以实现异步加载依赖模块，并且会提前加载那就是AMD规范。</p>
+<p><strong>其核心接口是</strong>：define(id, 『dependencies』, factory) ，它要在声明模块的时候指定所有的依赖 dependencies ，并且还要当做形参传到factory 中，对于依赖的模块提前执行，依赖前置。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="string">&quot;module&quot;</span>, [<span class="string">&quot;dep1&quot;</span>, <span class="string">&quot;dep2&quot;</span>], <span class="function"><span class="keyword">function</span>(<span class="params">d1, d2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> someExportedValue;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">require</span>([<span class="string">&quot;module&quot;</span>, <span class="string">&quot;../file&quot;</span>], <span class="function"><span class="keyword">function</span>(<span class="params"><span class="built_in">module</span>, file</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;);</span><br></pre></td></tr></table></figure>
+
+<p><strong>优点：</strong>在浏览器环境中异步加载模块；并行加载多个模块；</p>
+<p><strong>缺点：</strong>开发成本高，代码的阅读和书写比较困难，模块定义方式的语义不顺畅；不符合通用的模块化思维方式，是一种妥协的实现；</p>
+<h4 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a><strong>CMD</strong></h4><p>Common Module Definition 规范和 AMD 很相似，尽量保持简单，并与 CommonJS 和 Node.js 的 Modules 规范保持了很大的兼容性。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">define(function(require, exports, module) &#123;</span><br><span class="line">  var $ = require(&#x27;jquery&#x27;);</span><br><span class="line">  var Spinning = require(&#x27;./spinning&#x27;);</span><br><span class="line">  exports.doSomething = ...</span><br><span class="line">  module.exports = ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>优点：</strong>依赖就近，延迟执行（对于依赖的模块延迟执行） 可以很容易在 Node.js 中运行；<br><strong>缺点：</strong>依赖 SPM 打包，模块的加载逻辑偏重；<br><strong>实现：Sea.js</strong> ；coolie</p>
+<h4 id="ES6"><a href="#ES6" class="headerlink" title="ES6"></a><strong>ES6</strong></h4><p>ECMAScript6 标准增加了 JavaScript 语言层面的模块体系定义。<a target="_blank" rel="noopener" href="http://es6.ruanyifeng.com/#docs/module">ES6 模块</a>的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">&quot;jquery&quot;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">doStuff</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">module</span> <span class="string">&quot;localModule&quot;</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>优点：</p>
+<ul>
+<li>容易进行静态分析</li>
+<li>面向未来的 ECMAScript 标准</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>原生浏览器端还没有实现该标准</li>
+<li>全新的命令字，新版的 Node.js才支持</li>
+</ul>
+<p>实现：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://babeljs.io/">Babel</a></li>
+</ul>
+<h3 id="2-前端模块加载原理"><a href="#2-前端模块加载原理" class="headerlink" title="2.前端模块加载原理"></a>2.前端模块加载原理</h3><p>模块的加载和传输，我们首先能想到两种极端的方式，一种是每个模块文件都单独请求，另一种是把所有模块打包成一个文件然后只请求一次。显而易见，每个模块都发起单独的请求造成了请求次数过多，导致应用启动速度慢；一次请求加载所有模块导致流量浪费、初始化过程慢。这两种方式都不是好的解决方案</p>
+<p><strong>分块传输</strong>，按需进行懒加载，在实际用到某些模块的时候再增量更新，才是较为合理的模块加载方案。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">所有资源都是模块</span><br><span class="line">在上面的分析过程中，我们提到的模块仅仅是指JavaScript模块文件。然而，在前端开发过程中还涉及到样式、图片、字体、HTML 模板等等众多的资源。这些资源还会以各种方言的形式存在，比如 coffeescript、 less、 sass、众多的模板库、多语言系统（i18n）等等。</span><br><span class="line"></span><br><span class="line">解决:</span><br><span class="line">在编译的时候，要对整个代码进行静态分析，分析出各个模块的类型和它们依赖关系，然后将不同类型的模块提交给适配的加载器来处理。比如一个用 LESS 写的样式模块，可以先用 LESS 加载器将它转成一个CSS 模块，在通过 CSS 模块把他插入到页面的 &lt;style&gt; 标签中执行。</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Webpack"><a href="#3-Webpack" class="headerlink" title="3.Webpack"></a>3.Webpack</h3><p>Webpack 是一个模块打包器。它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源。</p>
+<p><img src="https://zhaoda.net/webpack-handbook/images/what-is-webpack.png" alt="什么是webpack"></p>
+<h1 id="uniapp手册"><a href="#uniapp手册" class="headerlink" title="uniapp手册"></a>uniapp手册</h1><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><p>一个uni-app工程，默认包含如下目录及文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">┌─cloudfunctions        云函数目录（阿里云为aliyun，腾讯云为tcb，详见uniCloud）</span><br><span class="line">│─components            符合vue组件规范的uni-app组件目录</span><br><span class="line">│  └─comp-a.vue         可复用的a组件</span><br><span class="line">├─hybrid                存放本地网页的目录，详见</span><br><span class="line">├─platforms             存放各平台专用页面的目录，详见</span><br><span class="line">├─pages                 业务页面文件存放的目录</span><br><span class="line">│  ├─index</span><br><span class="line">│  │  └─index.vue       index页面</span><br><span class="line">│  └─list</span><br><span class="line">│     └─list.vue        list页面</span><br><span class="line">├─static                存放应用引用静态资源（如图片、视频等）的目录，注意：静态资源只能存放于此</span><br><span class="line">├─wxcomponents          存放小程序组件的目录，详见</span><br><span class="line">├─main.js               Vue初始化入口文件</span><br><span class="line">├─App.vue               应用配置，用来配置App全局样式以及监听 应用生命周期</span><br><span class="line">├─manifest.json         配置应用名称、appid、logo、版本等打包信息，详见</span><br><span class="line">└─pages.json            配置页面路由、导航条、选项卡等页面类信息，详见</span><br></pre></td></tr></table></figure>
+
+<h2 id="资源路径说明"><a href="#资源路径说明" class="headerlink" title="资源路径说明"></a>资源路径说明</h2><ul>
+<li><p>编译到任意平台时，<code>static</code> 目录下的文件均会被打包进去，非 <code>static</code> 目录下的文件（vue、js、css 等）被引用到才会被包含进去。</p>
+</li>
+<li><p><code>static</code> 目录下的 <code>js</code> 文件不会被编译，如果里面有 <code>es6</code> 的代码，不经过转换直接运行，在手机设备上会报错。</p>
+</li>
+<li><p><code>css</code>、<code>less/scss</code> 等资源同样不要放在 <code>static</code> 目录下，建议这些公用的资源放在 <code>common</code> 目录下。</p>
+</li>
+<li><p>```</p>
+<!-- 绝对路径，/static指根目录下的static目录，在cli项目中/static指src目录下的static目录 -->
+<p><image class="logo" src="/static/logo.png"></image><br><image class="logo" src="@/static/logo.png"></image></p>
+<!-- 相对路径 -->
+<p><image class="logo" src="../../static/logo.png"></image></p>
+<p>// 绝对路径，@指向项目根目录，在cli项目中@指向src目录<br>import add from ‘@/common/add.js’</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 本地背景图片/字体文件的引用路径推荐使用以 ~@ 开头的绝对路径。</span><br><span class="line"></span><br><span class="line">## 页面样式与布局</span><br><span class="line"></span><br><span class="line">`uni-app` 支持的通用 css 单位包括 px、rpx</span><br><span class="line"></span><br><span class="line">- px 即屏幕像素</span><br><span class="line"></span><br><span class="line">- rpx 即响应式px，一种根据屏幕宽度自适应的动态单位。以750宽的屏幕为基准，750rpx恰好为屏幕宽度。屏幕变宽，rpx 实际显示效果会等比放大，但在 App 端和 H5 端屏幕宽度达到 960px 时，默认将按照 375px 的屏幕宽度进行计算，</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>{<br>  “globalStyle”: {</p>
+<pre><code>&quot;rpxCalcMaxDeviceWidth&quot;: 960, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+&quot;rpxCalcBaseDeviceWidth&quot;: 375, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+&quot;rpxCalcIncludeWidth&quot;: 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+</code></pre>
+<p>  },<br>}</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  - match-media组件  为组件指定一组 media query 媒体查询规则</span><br><span class="line"></span><br><span class="line">vue页面支持下面这些普通H5单位，但在nvue里不支持：</span><br><span class="line"></span><br><span class="line">- rem 根字体大小可以通过 [page-meta](https://uniapp.dcloud.io/component/page-meta?id=page-meta) 配置</span><br><span class="line">- vh viewpoint height，视窗高度，1vh等于视窗高度的1%</span><br><span class="line">- vw viewpoint width，视窗宽度，1vw等于视窗宽度的1%</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>若设计稿宽度为 750px，元素 A 在设计稿上的宽度为 100px，那么元素 A 在 uni-app 里面的宽度应该设为：750 * 100 / 750，结果为：100rpx。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">**tip:**</span><br><span class="line"></span><br><span class="line">- rpx不支持动态横竖屏切换计算，使用rpx建议锁定屏幕方向</span><br><span class="line"></span><br><span class="line">## 生命周期</span><br><span class="line"></span><br><span class="line">https://uniapp.dcloud.io/collocation/frame/lifecycle?id=%e5%ba%94%e7%94%a8%e7%94%9f%e5%91%bd%e5%91%a8%e6%9c%9f</span><br><span class="line"></span><br><span class="line">- `uni-app` 支持如下**应用生命周期**函数：</span><br><span class="line"></span><br><span class="line">  | 函数名               | 说明                                                         |</span><br><span class="line">  | :------------------- | :----------------------------------------------------------- |</span><br><span class="line">  | onLaunch             | 当`uni-app` 初始化完成时触发（全局只触发一次）               |</span><br><span class="line">  | onShow               | 当 `uni-app` 启动，或从后台进入前台显示                      |</span><br><span class="line">  | onHide               | 当 `uni-app` 从前台进入后台                                  |</span><br><span class="line">  | onError              | 当 `uni-app` 报错时触发                                      |</span><br><span class="line">  | onUniNViewMessage    | 对 `nvue` 页面发送的数据进行监听，可参考 [nvue 向 vue 通讯](https://uniapp.dcloud.io/use-weex?id=nvue-向-vue-通讯) |</span><br><span class="line">  | onUnhandledRejection | 对未处理的 Promise 拒绝事件监听函数（2.8.1+）                |</span><br><span class="line">  | onPageNotFound       | 页面不存在监听函数                                           |</span><br><span class="line">  | onThemeChange        | 监听系统主题变化                                             |</span><br><span class="line"></span><br><span class="line">  **注意**</span><br><span class="line"></span><br><span class="line">  - 应用生命周期仅可在`App.vue`中监听，在其它页面监听无效。</span><br><span class="line">  - onlaunch里进行页面跳转，如遇白屏报错，请参考https://ask.dcloud.net.cn/article/35942</span><br><span class="line"></span><br><span class="line">- **页面生命周期**</span><br><span class="line"></span><br><span class="line">  | onInit                              | 监听页面初始化，其参数同 onLoad 参数，为上个页面传递的数据，参数类型为 Object（用于页面传参），触发时机早于 onLoad | 百度小程序                                                   | 3.1.0+ |</span><br><span class="line">  | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------ |</span><br><span class="line">  | onLoad                              | 监听页面加载，其参数为上个页面传递的数据，参数类型为 Object（用于页面传参），参考[示例](https://uniapp.dcloud.io/api/router?id=navigateto) |                                                              |        |</span><br><span class="line">  | onShow                              | 监听页面显示。页面每次出现在屏幕上都触发，包括从下级页面点返回露出当前页面 |                                                              |        |</span><br><span class="line">  | onReady                             | 监听页面初次渲染完成。注意如果渲染速度快，会在页面进入动画完成前触发 |                                                              |        |</span><br><span class="line">  | onHide                              | 监听页面隐藏                                                 |                                                              |        |</span><br><span class="line">  | onUnload                            | 监听页面卸载                                                 |                                                              |        |</span><br><span class="line">  | onResize                            | 监听窗口尺寸变化                                             | App、微信小程序                                              |        |</span><br><span class="line">  | onPullDownRefresh                   | 监听用户下拉动作，一般用于下拉刷新，参考[示例](https://uniapp.dcloud.io/api/ui/pulldown) |                                                              |        |</span><br><span class="line">  | onReachBottom                       | 可在pages.json里定义具体页面底部的触发距离[onReachBottomDistance](https://uniapp.dcloud.io/collocation/pages)，比如设为50，那么滚动页面到距离底部50px时，就会触发onReachBottom事件。 |                                                              |        |</span><br><span class="line">  | onTabItemTap                        | 点击 tab 时触发，参数为Object，具体见下方注意事项            | 微信小程序、支付宝小程序、百度小程序、H5、App（自定义组件模式） |        |</span><br><span class="line">  | onShareAppMessage                   | 用户点击右上角分享                                           | 微信小程序、百度小程序、字节跳动小程序、支付宝小程序         |        |</span><br><span class="line">  | onPageScroll                        | 监听页面滚动，参数为Object                                   | nvue暂不支持                                                 |        |</span><br><span class="line">  | onNavigationBarButtonTap            | 监听原生标题栏按钮点击事件，参数为Object                     | App、H5                                                      |        |</span><br><span class="line">  | onBackPress                         | 监听页面返回，返回 event = &#123;from:backbutton、 navigateBack&#125; ，backbutton 表示来源是左上角返回按钮或 android 返回键；navigateBack表示来源是 uni.navigateBack ；详细说明及使用：[onBackPress 详解](http://ask.dcloud.net.cn/article/35120)。支付宝小程序只有真机能触发，只能监听非navigateBack引起的返回，不可阻止默认行为。 | app、H5、支付宝小程序                                        |        |</span><br><span class="line">  | onNavigationBarSearchInputChanged   | 监听原生标题栏搜索输入框输入内容变化事件                     | App、H5                                                      | 1.6.0  |</span><br><span class="line">  | onNavigationBarSearchInputConfirmed | 监听原生标题栏搜索输入框搜索事件，用户点击软键盘上的“搜索”按钮时触发。 | App、H5                                                      | 1.6.0  |</span><br><span class="line">  | onNavigationBarSearchInputClicked   | 监听原生标题栏搜索输入框点击事件                             | App、H5                                                      | 1.6.0  |</span><br><span class="line">  | onShareTimeline                     | 监听用户点击右上角转发到朋友圈                               | 微信小程序                                                   | 2.8.1+ |</span><br><span class="line">  | onAddToFavorites                    | 监听用户点击右上角收藏                                       | 微信小程序                                                   | 2.8.1+ |</span><br><span class="line"></span><br><span class="line">- **组件生命周期**</span><br><span class="line"></span><br><span class="line">  `uni-app` 组件支持的生命周期，与vue标准组件的生命周期相同。这里没有页面级的onLoad等生命周期：</span><br><span class="line"></span><br><span class="line">  | 函数名        | 说明                                                         | 平台差异说明 | 最低版本 |</span><br><span class="line">  | :------------ | :----------------------------------------------------------- | :----------- | :------- |</span><br><span class="line">  | beforeCreate  | 在实例初始化之后被调用。[详见](https://cn.vuejs.org/v2/api/#beforeCreate) |              |          |</span><br><span class="line">  | created       | 在实例创建完成后被立即调用。[详见](https://cn.vuejs.org/v2/api/#created) |              |          |</span><br><span class="line">  | beforeMount   | 在挂载开始之前被调用。[详见](https://cn.vuejs.org/v2/api/#beforeMount) |              |          |</span><br><span class="line">  | mounted       | 挂载到实例上去之后调用。[详见](https://cn.vuejs.org/v2/api/#mounted) 注意：此处并不能确定子组件被全部挂载，如果需要子组件完全挂载之后在执行操作可以使用`$nextTick`[Vue官方文档](https://cn.vuejs.org/v2/api/#Vue-nextTick) |              |          |</span><br><span class="line">  | beforeUpdate  | 数据更新时调用，发生在虚拟 DOM 打补丁之前。[详见](https://cn.vuejs.org/v2/api/#beforeUpdate) | 仅H5平台支持 |          |</span><br><span class="line">  | updated       | 由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。[详见](https://cn.vuejs.org/v2/api/#updated) | 仅H5平台支持 |          |</span><br><span class="line">  | beforeDestroy | 实例销毁之前调用。在这一步，实例仍然完全可用。[详见](https://cn.vuejs.org/v2/api/#beforeDestroy) |              |          |</span><br><span class="line">  | destroyed     | Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。[详见](https://cn.vuejs.org/v2/api/#destroyed) |              |          |</span><br><span class="line"></span><br><span class="line">## 路由</span><br><span class="line"></span><br><span class="line">### API</span><br><span class="line"></span><br><span class="line">框架以栈的形式管理当前所有页面， 当发生路由切换的时候，页面栈的表现如下：</span><br><span class="line"></span><br><span class="line">| 路由方式   | 页面栈表现                        | 触发时机                                                     |</span><br><span class="line">| ---------- | --------------------------------- | ------------------------------------------------------------ |</span><br><span class="line">| 初始化     | 新页面入栈                        | uni-app 打开的第一个页面                                     |</span><br><span class="line">| 打开新页面 | 新页面入栈                        | 调用 API  [uni.navigateTo](https://uniapp.dcloud.io/api/router?id=navigateto) 、使用组件  [](https://uniapp.dcloud.io/component/navigator?id=navigator) |</span><br><span class="line">| 页面重定向 | 当前页面出栈，新页面入栈          | 调用 API  [uni.redirectTo](https://uniapp.dcloud.io/api/router?id=redirectto) 、使用组件 [](https://uniapp.dcloud.io/component/navigator?id=navigator) |</span><br><span class="line">| 页面返回   | 页面不断出栈，直到目标返回页      | 调用 API  [uni.navigateBack](https://uniapp.dcloud.io/api/router?id=navigateback)  、使用组件 [](https://uniapp.dcloud.io/component/navigator?id=navigator) 、用户按左上角返回按钮、安卓用户点击物理back按键 |</span><br><span class="line">| Tab 切换   | 页面全部出栈，只留下新的 Tab 页面 | 调用 API  [uni.switchTab](https://uniapp.dcloud.io/api/router?id=switchtab) 、使用组件 [](https://uniapp.dcloud.io/component/navigator?id=navigator) 、用户切换 Tab |</span><br><span class="line">| 重加载     | 页面全部出栈，只留下新的页面      | 调用 API  [uni.reLaunch](https://uniapp.dcloud.io/api/router?id=relaunch) 、使用组件  [](https://uniapp.dcloud.io/component/navigator?id=navigator) |</span><br><span class="line"></span><br><span class="line">### 传参</span><br><span class="line"></span><br><span class="line">#### navigateBack</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>//page-A<br>let pages = getCurrentPages();<br>let currPage = pages[pages.length - 1]; // 当前页的实例<br>this.cityCul = currPage.$vm.cityCul</p>
+</li>
+</ul>
+<p>//page-B<br>let pages = getCurrentPages()<br>let nowPage = pages[pages.length - 1]; //当前页页面实例<br>let prevPage = pages[pages.length - 2]; //上一页页面实例<br>prevPage.$vm.cityCul = this.CityCul<br>uni.navigateBack({<br>        url: “../index/index?city=” + this.CityCul</p>
+<p>});</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### Tips:</span><br><span class="line"></span><br><span class="line">- **目前页面路径最多只能十层。**</span><br><span class="line"></span><br><span class="line">## 运行环境判断</span><br><span class="line"></span><br><span class="line">[开发环境和生产环境](https://uniapp.dcloud.io/frame?id=开发环境和生产环境)</span><br><span class="line"></span><br><span class="line">`uni-app` 可通过 `process.env.NODE_ENV` 判断当前环境是开发环境还是生产环境。一般用于连接测试服务器或生产服务器的动态切换。</span><br><span class="line"></span><br><span class="line">- 在HBuilderX 中，点击“运行”编译出来的代码是开发环境，点击“发行”编译出来的代码是生产环境</span><br><span class="line">- cli模式下，是通行的编译环境处理方式。</span><br><span class="line"></span><br><span class="line">```javascript</span><br><span class="line">if(process.env.NODE_ENV === &#x27;development&#x27;)&#123;</span><br><span class="line">    console.log(&#x27;开发环境&#x27;)</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    console.log(&#x27;生产环境&#x27;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%E5%88%A4%E6%96%AD%E5%B9%B3%E5%8F%B0">判断平台</a></strong></p>
+<p>平台判断有2种场景，一种是在编译期判断，一种是在运行期判断。</p>
+<ul>
+<li>编译期判断 编译期判断，即条件编译，不同平台在编译出包后已经是不同的代码。详见：<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/platform">条件编译</a></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// #ifdef H5</span></span><br><span class="line">    alert(<span class="string">&quot;只有h5平台才有alert方法&quot;</span>)</span><br><span class="line"><span class="comment">// #endif</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>运行期判断 运行期判断是指代码已经打入包中，仍然需要在运行期判断平台，此时可使用 <code>uni.getSystemInfoSync().platform</code> 判断客户端环境是 Android、iOS 还是小程序开发工具（在百度小程序开发工具、微信小程序开发工具、支付宝小程序开发工具中使用 <code>uni.getSystemInfoSync().platform</code> 返回值均为 devtools）。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(uni.getSystemInfoSync().platform)&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;android&#x27;</span>:</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">&#x27;运行Android上&#x27;</span>)</span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;ios&#x27;</span>:</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">&#x27;运行iOS上&#x27;</span>)</span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">       <span class="built_in">console</span>.log(<span class="string">&#x27;运行在开发者工具上&#x27;</span>)</span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="页面样式与尺寸"><a href="#页面样式与尺寸" class="headerlink" title="页面样式与尺寸"></a>页面样式与尺寸</h2><p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D">尺寸单位</a></p>
+<p><code>uni-app</code> 支持的通用 css 单位包括 px、rpx</p>
+<ul>
+<li><p>px 即屏幕像素</p>
+</li>
+<li><p>rpx 即响应式px，一种根据屏幕宽度自适应的动态单位。</p>
+<p>rpx 是相对于基准宽度的单位，可以根据屏幕宽度进行自适应。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">开发者可以通过设计稿基准宽度计算页面元素 rpx 值，设计稿 1px 与框架样式 1rpx 转换公式如下：</span><br><span class="line">设计稿 1px / 设计稿基准宽度 = 框架样式 1rpx / 750rpx</span><br><span class="line">750 * 元素在设计稿中的宽度 / 设计稿基准宽度</span><br><span class="line"></span><br><span class="line">举例说明：</span><br><span class="line">若设计稿宽度为 750px，元素 A 在设计稿上的宽度为 100px，那么元素 A 在 uni-app 里面的宽度应该设为：750 * 100 / 750，结果为：100rpx。</span><br><span class="line">若设计稿宽度为 640px，元素 A 在设计稿上的宽度为 100px，那么元素 A 在 uni-app 里面的宽度应该设为：750 * 100 / 640，结果为：117rpx。</span><br></pre></td></tr></table></figure></li>
+<li><h3 id="固定值"><a href="#固定值" class="headerlink" title="固定值"></a>固定值</h3></li>
+</ul>
+<p><code>uni-app</code> 中以下组件的高度是固定的，不可修改：</p>
+<table>
+<thead>
+<tr>
+<th align="left">组件</th>
+<th align="left">描述</th>
+<th align="left">App</th>
+<th align="left">H5</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">NavigationBar</td>
+<td align="left">导航栏</td>
+<td align="left">44px</td>
+<td align="left">44px</td>
+</tr>
+<tr>
+<td align="left">TabBar</td>
+<td align="left">底部选项卡</td>
+<td align="left">HBuilderX 2.3.4之前为56px，2.3.4起和H5调为一致，统一为 50px。但可以自主更改高度）</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h2 id="renderjs"><a href="#renderjs" class="headerlink" title="renderjs"></a>renderjs</h2><p><code>renderjs</code>是一个运行在视图层的js。它比<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/?id=wxs">WXS</a>更加强大。它只支持app-vue和h5。</p>
+<p><code>renderjs</code>的主要作用有2个：</p>
+<ul>
+<li>大幅降低逻辑层和视图层的通讯损耗，提供高性能视图交互能力</li>
+<li>在视图层操作dom，运行for web的js库</li>
+</ul>
+<p><strong>使用方式</strong></p>
+<p>设置 script 节点的 lang 为 renderjs</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">module</span>=<span class="string">&quot;test&quot;</span> <span class="attr">lang</span>=<span class="string">&quot;renderjs&quot;</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">    <span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">        <span class="function"><span class="title">mounted</span>(<span class="params"></span>)</span> &#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">// ...</span></span></span><br><span class="line"><span class="javascript">        &#125;,</span></span><br><span class="line"><span class="javascript">        <span class="attr">methods</span>: &#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">// ...</span></span></span><br><span class="line"><span class="javascript">        &#125;</span></span><br><span class="line"><span class="javascript">    &#125;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用vue注意事项"><a href="#使用vue注意事项" class="headerlink" title="使用vue注意事项"></a>使用vue注意事项</h2><h3 id="uniapp中nvue与vue的区别"><a href="#uniapp中nvue与vue的区别" class="headerlink" title="uniapp中nvue与vue的区别"></a>uniapp中nvue与vue的区别</h3><p>uni-app是逻辑和渲染分离的，渲染层在<strong>app端</strong>提供了两套排版引擎。<br>小程序方式的webview渲染，和weex方式的原生渲染，两种渲染引擎可以自己根据需要选。<br> <strong>vue文件走的webview渲染</strong><br> <strong>nvue走weex方式的原生渲染</strong></p>
+<p>组件和js写法是一样的，css不一样，原生排版的能用的css必须是flex布局</p>
+<p>虽然nvue也可以多端编译，输出H5和小程序，但nvue的css写法受限，所以如果你不开发App，那么不需要使用nvue。</p>
+<p>一个<strong>App</strong>中可以同时使用两种页面，比如首页使用nvue，二级页使用vue页面，hello uni-app示例就是如此。</p>
+<h3 id="nvue适用场景"><a href="#nvue适用场景" class="headerlink" title="nvue适用场景"></a>nvue适用场景</h3><p>在App端某些vue页面表现不佳的场景下使用 nvue 作为强化补充。这些场景如下：</p>
+<ol>
+<li>需要高性能的区域长列表或瀑布流滚动。webview的页面级长列表滚动时没有性能问题的（就是滚动条覆盖webview整体高度），但页面中某个区域做长列表滚动，则需要使用nvue的<code>list</code>、<code>recycle-list</code>、<code>waterfall</code>等组件(<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/list">详见</a>)。这些组件的性能要高于vue页面里的区域滚动组件<code>scroll-view</code>。</li>
+<li>复杂高性能的自定义下拉刷新。uni-app的pages.json里可以配置原生下拉刷新，但引擎内置的下拉刷新样式只有雪花和circle圈2种样式。如果你需要自己做复杂的下拉刷新，推荐使用nvue的refresh组件。当然<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/search?q=%E4%B8%8B%E6%8B%89%E5%88%B7%E6%96%B0">插件市场</a>里也有很多vue下的自定义下拉刷新插件，只要是基于renderjs或wxs的，性能也可以商用，只是没有nvue的<code>refresh</code>组件更极致。</li>
+<li>左右拖动的长列表。在webview里，通过<code>swiper</code>+<code>scroll-view</code>实现左右拖动的长列表，前端模拟下拉刷新，这套方案的性能不好。此时推荐使用nvue，比如新建uni-app项目时的<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?id=103">新闻示例模板</a>，就采用了nvue，切换很流畅。</li>
+<li>实现区域滚动长列表+左右拖动列表+吸顶的复杂排版效果，效果可参考hello uni-app模板里的<code>swiper-list</code>。<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?id=2128">详见</a></li>
+<li>如需要将软键盘右下角按钮文字改为“发送”，则需要使用nvue。比如聊天场景，除了软键盘右下角的按钮文字处理外，还涉及聊天记录区域长列表滚动，适合nvue来做。</li>
+<li>解决前端控件无法覆盖原生控件的层级问题。当你使用<code>map</code>、<code>video</code>、<code>live-pusher</code>等原生组件时，会发现前端写的<code>view</code>等组件无法覆盖原生组件，层级问题处理比较麻烦，此时使用nvue更好。或者在vue页面上也可以覆盖一个subnvue（一种非全屏的nvue页面覆盖在webview上），以解决App上的原生控件层级问题。<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/native-component">详见</a></li>
+<li>如深度使用<code>map</code>组件，建议使用nvue。除了层级问题，App端nvue文件的map功能更完善，和小程序拉齐度更高，多端一致性更好。</li>
+<li>如深度使用<code>video</code>，建议使用nvue。比如如下2个场景：video内嵌到swiper中，以实现抖音式视频滑动切换，例子见<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/search?q=%E4%BB%BF%E6%8A%96%E9%9F%B3">插件市场</a>；nvue的视频全屏后，通过<code>cover-view</code>实现内容覆盖，比如增加文字标题、分享按钮。</li>
+<li>直播推流：nvue下有<code>live-pusher</code>组件，和小程序对齐，功能更完善，也没有层级问题。</li>
+<li>对App启动速度要求极致化。App端v3编译器模式下，如果首页使用nvue且在manifest里配置fast模式，那么App的启动速度可以控制在1秒左右。而使用vue页面的话，App的启动速度一般是3秒起，取决于你的代码性能和体积。</li>
+</ol>
+<h3 id="nvue开发与vue开发的常见区别"><a href="#nvue开发与vue开发的常见区别" class="headerlink" title="nvue开发与vue开发的常见区别"></a><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/use-weex?id=nvue%E5%BC%80%E5%8F%91%E4%B8%8Evue%E5%BC%80%E5%8F%91%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8C%BA%E5%88%AB">nvue开发与vue开发的常见区别</a></h3><p>基于原生引擎的渲染，虽然还是前端技术栈，但和web开发肯定是有区别的。</p>
+<ol>
+<li>nvue 页面控制显隐只可以使用<code>v-if</code>不可以使用<code>v-show</code></li>
+<li>nvue 页面只能使用<code>flex</code>布局，不支持其他布局方式。页面开发前，首先想清楚这个页面的纵向内容有什么，哪些是要滚动的，然后每个纵向内容的横轴排布有什么，按 flex 布局设计好界面。</li>
+<li>nvue 页面的布局排列方向默认为竖排（<code>column</code>），如需改变布局方向，可以在 <code>manifest.json</code> -&gt; <code>app-plus</code> -&gt; <code>nvue</code> -&gt; <code>flex-direction</code> 节点下修改，仅在 uni-app 模式下生效。<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/collocation/manifest?id=nvue">详情</a>。</li>
+<li>nvue页面编译为H5、小程序时，会做一件css默认值对齐的工作。因为weex渲染引擎只支持flex，并且默认flex方向是垂直。而H5和小程序端，使用web渲染，默认不是flex，并且设置<code>display:flex</code>后，它的flex方向默认是水平而不是垂直的。所以nvue编译为H5、小程序时，会自动把页面默认布局设为flex、方向为垂直。当然开发者手动设置后会覆盖默认设置。</li>
+<li>文字内容，必须、只能在<code>&lt;text&gt;</code>组件下。不能在<code>&lt;div&gt;</code>、<code>&lt;view&gt;</code>的<code>text</code>区域里直接写文字。否则即使渲染了，也无法绑定js里的变量。</li>
+<li>只有<code>text</code>标签可以设置字体大小，字体颜色。</li>
+<li>布局不能使用百分比、没有媒体查询。</li>
+<li>nvue 切换横竖屏时可能导致样式出现问题，建议有 nvue 的页面锁定手机方向。</li>
+<li>支持的css有限，不过并不影响布局出你需要的界面，<code>flex</code>还是非常强大的。详见</li>
+<li>不支持背景图。但可以使用<code>image</code>组件和层级来实现类似web中的背景效果。因为原生开发本身也没有web这种背景图概念</li>
+<li>css选择器支持的比较少，只能使用 class 选择器。<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/use-weex?id=%E6%A0%B7%E5%BC%8F">详见</a></li>
+<li>nvue 的各组件在安卓端默认是透明的，如果不设置<code>background-color</code>，可能会导致出现重影的问题。</li>
+<li><code>class</code> 进行绑定时只支持数组语法。</li>
+<li>Android端在一个页面内使用大量圆角边框会造成性能问题，尤其是多个角的样式还不一样的话更耗费性能。应避免这类使用。</li>
+<li>nvue页面没有<code>bounce</code>回弹效果，只有几个列表组件有<code>bounce</code>效果，包括 <code>list</code>、<code>recycle-list</code>、<code>waterfall</code>。</li>
+<li>原生开发没有页面滚动的概念，页面内容高过屏幕高度并不会自动滚动，只有部分组件可滚动（<code>list</code>、<code>waterfall</code>、<code>scroll-view/scroller</code>），要滚得内容需要套在可滚动组件下。这不符合前端开发的习惯，所以在 nvue 编译为 uni-app模式时，给页面外层自动套了一个 <code>scroller</code>，页面内容过高会自动滚动。（组件不会套，页面有<code>recycle-list</code>时也不会套）。后续会提供配置，可以设置不自动套。</li>
+<li>在 App.vue 中定义的全局js变量不会在 nvue 页面生效。<code>globalData</code>和<code>vuex</code>是生效的。</li>
+<li>App.vue 中定义的全局css，对nvue和vue页面同时生效。如果全局css中有些css在nvue下不支持，编译时控制台会报警，建议把这些不支持的css包裹在<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/platform">条件编译</a>里，<code>APP-PLUS-NVUE</code></li>
+<li>不能在 <code>style</code> 中引入字体文件，nvue 中字体图标的使用参考：<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/use-weex?id=addrule">加载自定义字体</a>。如果是本地字体，可以用<code>plus.io</code>的API转换路径。</li>
+<li>目前不支持在 nvue 页面使用 <code>typescript/ts</code>。</li>
+<li>nvue 页面关闭原生导航栏时，想要模拟状态栏，可以<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/35111">参考文章</a>。但是，仍然强烈建议在nvue页面使用原生导航栏。nvue的渲染速度再快，也没有原生导航栏快。原生排版引擎解析<code>json</code>绘制原生导航栏耗时很少，而解析nvue的js绘制整个页面的耗时要大的多，尤其在新页面进入动画期间，对于复杂页面，没有原生导航栏会在动画期间产生整个屏幕的白屏或闪屏。</li>
+</ol>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ul>
+<li><p><code>uni-app</code> 完整支持 <code>Vue</code> 实例的生命周期，同时还新增 <a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">应用生命周期</a> 及 <a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/frame?id=%E9%A1%B5%E9%9D%A2%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">页面生命周期</a>。</p>
+</li>
+<li><p><code>uni-app</code> 完整支持 <code>Vue</code> 模板语法</p>
+</li>
+<li><p><code>data</code> 必须声明为返回一个初始数据对象的函数（注意函数内返回的数据对象不要直接引用函数外的对象）；否则页面关闭时，数据不会自动销毁，再次打开该页面时，会显示上次数据。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">        title: &#x27;Hello&#x27;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="条件编译"><a href="#条件编译" class="headerlink" title="条件编译"></a>条件编译</h2><p>条件编译是用特殊的注释作为标记，在编译时根据这些特殊的注释，将注释里面的代码编译到不同平台。</p>
+<p><strong>写法：</strong>以 #ifdef 或 #ifndef 加 <strong>%PLATFORM%</strong> 开头，以 #endif 结尾。</p>
+<ul>
+<li>#ifdef：if defined 仅在某平台存在</li>
+<li>#ifndef：if not defined 除了某平台均存在</li>
+<li>**%PLATFORM%**：平台名称</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>#ifdef <strong>APP-PLUS</strong> 需条件编译的代码 #endif</th>
+<th>仅出现在 App 平台下的代码</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>#ifndef <strong>H5</strong> 需条件编译的代码 #endif</td>
+<td>除了 H5 平台，其它平台均存在的代码</td>
+</tr>
+<tr>
+<td>#ifdef <strong>H5</strong> || <strong>MP-WEIXIN</strong> 需条件编译的代码 #endif</td>
+<td>在 H5 平台或微信小程序平台存在的代码（这里只有||，不可能出现&amp;&amp;，因为没有交集）</td>
+</tr>
+</tbody></table>
+<p><strong>%PLATFORM%</strong> <strong>可取值如下：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">值</th>
+<th align="left">平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">APP-PLUS</td>
+<td align="left">App</td>
+</tr>
+<tr>
+<td align="left">APP-PLUS-NVUE</td>
+<td align="left">App nvue</td>
+</tr>
+<tr>
+<td align="left">H5</td>
+<td align="left">H5</td>
+</tr>
+<tr>
+<td align="left">MP-WEIXIN</td>
+<td align="left">微信小程序</td>
+</tr>
+<tr>
+<td align="left">MP-ALIPAY</td>
+<td align="left">支付宝小程序</td>
+</tr>
+<tr>
+<td align="left">MP-BAIDU</td>
+<td align="left">百度小程序</td>
+</tr>
+<tr>
+<td align="left">MP-TOUTIAO</td>
+<td align="left">字节跳动小程序</td>
+</tr>
+</tbody></table>
+<h3 id="pages-json-的条件编译"><a href="#pages-json-的条件编译" class="headerlink" title="pages.json 的条件编译"></a>pages.json 的条件编译</h3><p>下面的页面，只有运行至 App 时才会编译进去。</p>
+<p><img src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/doc/img/platform-4.png" alt="img"></p>
+<h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><h2 id="页面实例"><a href="#页面实例" class="headerlink" title="页面实例"></a>页面实例</h2><h3 id="getApp"><a href="#getApp" class="headerlink" title="getApp"></a>getApp</h3><p><code>getApp()</code> 函数用于获取当前应用实例，一般用于获取globalData 。</p>
+<p><strong>实例</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> app = getApp()</span><br><span class="line"><span class="built_in">console</span>.log(app.globalData)</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ul>
+<li>不要在定义于 <code>App()</code> 内的函数中，或调用 <code>App</code> 前调用 <code>getApp()</code> ，可以通过 <code>this.$scope</code> 获取对应的app实例</li>
+<li>通过 <code>getApp()</code> 获取实例之后，不要私自调用生命周期函数。</li>
+<li>v3模式加速了首页<code>nvue</code>的启动速度，当在首页<code>nvue</code>中使用<code>getApp()</code>不一定可以获取真正的<code>App</code>对象。对此v3版本提供了<code>const app = getApp(&#123;allowDefault: true&#125;)</code>用来获取原始的<code>App</code>对象，可以用来在首页对<code>globalData</code>等初始化</li>
+</ul>
+<h3 id="getCurrentPages"><a href="#getCurrentPages" class="headerlink" title="getCurrentPages()"></a><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/collocation/frame/window?id=getcurrentpages">getCurrentPages()</a></h3><p><code>getCurrentPages()</code> 函数用于获取当前<strong>页面栈的实例</strong>，以数组形式按栈的顺序给出，第一个元素为首页，最后一个元素为当前页面。</p>
+<p><strong>注意：</strong> <code>getCurrentPages()</code>仅用于展示页面栈的情况，请勿修改页面栈，以免造成页面状态错误。</p>
+<p>每个页面实例的方法属性列表：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>描述</th>
+<th>平台说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>page.$getAppWebview()</td>
+<td>获取当前页面的webview对象实例</td>
+<td>App</td>
+</tr>
+<tr>
+<td>page.route</td>
+<td>获取当前页面的路由</td>
+<td></td>
+</tr>
+</tbody></table>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> pages = getCurrentPages()</span><br><span class="line"><span class="keyword">let</span> nowPage = pages[pages.length - <span class="number">1</span>]; <span class="comment">//当前页页面实例</span></span><br><span class="line"><span class="keyword">let</span> prevPage = pages[pages.length - <span class="number">2</span>]; <span class="comment">//上一页页面实例</span></span><br><span class="line"><span class="built_in">console</span>.log(prevPage)</span><br><span class="line">prevPage.$vm.cityCul = <span class="built_in">this</span>.CityCul <span class="comment">//给上一个页面实例添加一个data</span></span><br></pre></td></tr></table></figure>
+
+<p>Tips：</p>
+<ul>
+<li><code>navigateTo</code>, <code>redirectTo</code> 只能打开非 tabBar 页面。</li>
+<li><code>switchTab</code> 只能打开 <code>tabBar</code> 页面。</li>
+<li><code>reLaunch</code> 可以打开任意页面。</li>
+<li>页面底部的 <code>tabBar</code> 由页面决定，即只要是定义为 <code>tabBar</code> 的页面，底部都有 <code>tabBar</code>。</li>
+<li>不能在 <code>App.vue</code> 里面进行页面跳转。</li>
+</ul>
+<h3 id="getAppWebview"><a href="#getAppWebview" class="headerlink" title="$getAppWebview()"></a><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/collocation/frame/window?id=getappwebview">$getAppWebview()</a></h3><p><code>uni-app</code> 在 <code>getCurrentPages()</code>获得的页面里内置了一个方法 <code>$getAppWebview()</code> 可以得到当前webview的对象实例，从而实现对 webview 更强大的控制。在 html5Plus 中，plus.webview具有强大的控制能力，可参考：<a target="_blank" rel="noopener" href="http://www.html5plus.org/doc/zh_cn/webview.html#plus.webview.WebviewObject">WebviewObject</a>。</p>
+<p>但<code>uni-app</code>框架有自己的窗口管理机制，请不要自己创建和销毁webview，如有需求覆盖子窗体上去，请使用<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/api/window/subNVues">原生子窗体subNvue</a>。</p>
+<p><strong>注意：此方法仅 App 支持</strong></p>
+<p><strong>示例：</strong></p>
+<p>获取当前页面 webview 的对象实例</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="function"><span class="title">data</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">title</span>: <span class="string">&#x27;Hello&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="function"><span class="title">onLoad</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="comment">// #ifdef APP-PLUS</span></span><br><span class="line">    <span class="keyword">const</span> currentWebview = <span class="built_in">this</span>.$scope.$getAppWebview(); <span class="comment">//此对象相当于html5plus里的plus.webview.currentWebview()。在uni-app里vue页面直接使用plus.webview.currentWebview()无效，非v3编译模式使用this.$mp.page.$getAppWebview()</span></span><br><span class="line">    currentWebview.setBounce(&#123;<span class="attr">position</span>:&#123;<span class="attr">top</span>:<span class="string">&#x27;100px&#x27;</span>&#125;,<span class="attr">changeoffset</span>:&#123;<span class="attr">top</span>:<span class="string">&#x27;0px&#x27;</span>&#125;&#125;); <span class="comment">//动态重设bounce效果</span></span><br><span class="line">    <span class="comment">// #endif</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>获取指定页面 webview 的对象实例</p>
+<p><code>getCurrentPages()</code>可以得到所有页面对象，然后根据数组，可以取指定的页面webview对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> pages = getCurrentPages();</span><br><span class="line"><span class="keyword">var</span> page = pages[pages.length - <span class="number">1</span>];</span><br><span class="line"><span class="comment">// #ifdef APP-PLUS</span></span><br><span class="line"><span class="keyword">var</span> currentWebview = page.$getAppWebview();</span><br><span class="line"><span class="built_in">console</span>.log(currentWebview.id);<span class="comment">//获得当前webview的id</span></span><br><span class="line"><span class="built_in">console</span>.log(currentWebview.isVisible());<span class="comment">//查询当前webview是否可见</span></span><br><span class="line">);</span><br><span class="line"><span class="comment">// #endif</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h1><p>1、@touchstart ：触摸开始；<br>2、@touchmove：手指滑动的过程；<br>3、@touchend：触摸结束，手指离开屏幕。</p>
+<h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><p>mysql -uroot -h 127.0.0.1 -p</p>
+<p>use ebook;</p>
+<p>show tables;</p>
+<p>mysql&gt; create table login(<br>    -&gt; username char(9),<br>    -&gt; password char(12)<br>    -&gt; )charset utf8;</p>
+<p>show tables;</p>
+<p>desc login;</p>
+<p>insert into login values(‘liming’,’123456’);</p>
+<p> select * from login where username = ‘liming’;</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:120329698@qq.com">LMTomorrow</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://tomorrowlm.github.io/2020/09/25/uniapp/">https://tomorrowlm.github.io/2020/09/25/uniapp/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://tomorrowlm.github.io" target="_blank">TomorrowLM-Web</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/uniapp/">uniapp</a></div><div class="post_share"><div class="social-share" data-image="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2020/09/25/learn-tip/"><img class="prev-cover" src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">散装的学习笔记</div></div></a></div><div class="next-post pull-right"><a href="/2020/09/25/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"><img class="next-cover" src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">项目构建</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">LMTomorrow</div><div class="author-info__description">热爱</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">29</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/TomorrowLM"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#eBook"><span class="toc-number">1.</span> <span class="toc-text">eBook</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text">创建一个项目</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%91%BD%E4%BB%A4"><span class="toc-number">2.1.</span> <span class="toc-text">1.命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8cli%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%BD%BF%E7%94%A8HBuilderX%E5%8F%AF%E8%A7%86%E5%8C%96%E7%95%8C%E9%9D%A2%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">2.1.1.</span> <span class="toc-text">使用cli创建项目和使用HBuilderX可视化界面创建项目有什么区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2"><span class="toc-number">2.2.</span> <span class="toc-text">2.使用图形化界面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#webpack"><span class="toc-number">3.1.</span> <span class="toc-text">webpack</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A8%A1%E5%9D%97%E7%9A%84%E6%BC%94%E8%BF%9B"><span class="toc-number">3.1.1.</span> <span class="toc-text">1.模块的演进</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#script%E6%A0%87%E7%AD%BE"><span class="toc-number">3.1.1.1.</span> <span class="toc-text">script标签</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CommonJS"><span class="toc-number">3.1.1.2.</span> <span class="toc-text">CommonJS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AMD"><span class="toc-number">3.1.1.3.</span> <span class="toc-text">AMD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CMD"><span class="toc-number">3.1.1.4.</span> <span class="toc-text">CMD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ES6"><span class="toc-number">3.1.1.5.</span> <span class="toc-text">ES6</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%89%8D%E7%AB%AF%E6%A8%A1%E5%9D%97%E5%8A%A0%E8%BD%BD%E5%8E%9F%E7%90%86"><span class="toc-number">3.1.2.</span> <span class="toc-text">2.前端模块加载原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Webpack"><span class="toc-number">3.1.3.</span> <span class="toc-text">3.Webpack</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#uniapp%E6%89%8B%E5%86%8C"><span class="toc-number">4.</span> <span class="toc-text">uniapp手册</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-number">4.1.</span> <span class="toc-text">目录结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%84%E6%BA%90%E8%B7%AF%E5%BE%84%E8%AF%B4%E6%98%8E"><span class="toc-number">4.2.</span> <span class="toc-text">资源路径说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E6%A0%B7%E5%BC%8F%E4%B8%8E%E5%B0%BA%E5%AF%B8"><span class="toc-number">4.3.</span> <span class="toc-text">页面样式与尺寸</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BA%E5%AE%9A%E5%80%BC"><span class="toc-number">4.3.1.</span> <span class="toc-text">固定值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#renderjs"><span class="toc-number">4.4.</span> <span class="toc-text">renderjs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8vue%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">4.5.</span> <span class="toc-text">使用vue注意事项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#uniapp%E4%B8%ADnvue%E4%B8%8Evue%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">4.5.1.</span> <span class="toc-text">uniapp中nvue与vue的区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nvue%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="toc-number">4.5.2.</span> <span class="toc-text">nvue适用场景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#nvue%E5%BC%80%E5%8F%91%E4%B8%8Evue%E5%BC%80%E5%8F%91%E7%9A%84%E5%B8%B8%E8%A7%81%E5%8C%BA%E5%88%AB"><span class="toc-number">4.5.3.</span> <span class="toc-text">nvue开发与vue开发的常见区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tips"><span class="toc-number">4.5.4.</span> <span class="toc-text">Tips</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91"><span class="toc-number">4.6.</span> <span class="toc-text">条件编译</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#pages-json-%E7%9A%84%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91"><span class="toc-number">4.6.1.</span> <span class="toc-text">pages.json 的条件编译</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#API"><span class="toc-number">5.</span> <span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%AE%9E%E4%BE%8B"><span class="toc-number">5.1.</span> <span class="toc-text">页面实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#getApp"><span class="toc-number">5.1.1.</span> <span class="toc-text">getApp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getCurrentPages"><span class="toc-number">5.1.2.</span> <span class="toc-text">getCurrentPages()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#getAppWebview"><span class="toc-number">5.1.3.</span> <span class="toc-text">$getAppWebview()</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6"><span class="toc-number">6.</span> <span class="toc-text">事件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#mysql"><span class="toc-number">7.</span> <span class="toc-text">mysql</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/11/13/hello-world/" title="Hello World"><img src="/img/header.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/11/13/hello-world/" title="Hello World">Hello World</a><time datetime="2021-11-13T03:27:06.625Z" title="发表于 2021-11-13 11:27:06">2021-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/25/node/" title="node"><img src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="node"/></a><div class="content"><a class="title" href="/2020/09/25/node/" title="node">node</a><time datetime="2020-09-24T16:00:00.000Z" title="发表于 2020-09-25 00:00:00">2020-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/25/%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" title="代码片段"><img src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="代码片段"/></a><div class="content"><a class="title" href="/2020/09/25/%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" title="代码片段">代码片段</a><time datetime="2020-09-24T16:00:00.000Z" title="发表于 2020-09-25 00:00:00">2020-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式"><img src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="正则表达式"/></a><div class="content"><a class="title" href="/2020/09/25/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式">正则表达式</a><time datetime="2020-09-24T16:00:00.000Z" title="发表于 2020-09-25 00:00:00">2020-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2020/09/25/learn-tip/" title="散装的学习笔记"><img src="https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="散装的学习笔记"/></a><div class="content"><a class="title" href="/2020/09/25/learn-tip/" title="散装的学习笔记">散装的学习笔记</a><time datetime="2020-09-24T16:00:00.000Z" title="发表于 2020-09-25 00:00:00">2020-09-25</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://i0.hippopx.com/photos/457/88/1021/microphone-boy-studio-screaming-preview.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021  <i id="heartbeat" class="fa fas fa-heartbeat"></i> LMTomorrow</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">因为热爱，所以专注</div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '6bfdb22315df9b919429',
+      clientSecret: '80fa5ba42986f3960283146c3faf03bc34beb4ab',
+      repo: 'TomorrowLM.github.io',
+      owner: 'TomorrowLM',
+      admin: ['TomorrowLM'],
+      id: '3bbcd500784d63ad2e06bdb3d9acb318',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="4929980436" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src="/js/custom.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && location.pathname =='/'){
+    
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms"></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载swiper')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper/swiper/swiper.min.js"></script>
+<script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-swiper@0.18/swiper/swiperindex.js"></script>
+<style></style><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementsByClassName('recent-posts')[0];
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementsByClassName('recent-posts')[0] && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://gitcalendar.akilar.top/api?Akilarlxh",['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06'],'Akilarlxh')
+                        }
+                      </script><!-- hexo injector body_end end --></body></html>
